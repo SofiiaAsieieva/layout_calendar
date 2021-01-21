@@ -1,0 +1,12 @@
+$blockDayWidth: 100px;
+$blockDayHeight: 100px;
+
+$week: (
+  mon: 0,
+  tue: 100px + 3px,
+  wed: (2 * $blockDayWidth) + 5px,
+  thu: (3 * $blockDayWidth) + 7px,
+  fri: (4 * $blockDayWidth) + 8.5px,
+  sat: (5 * $blockDayWidth) + 10.5px,
+  sun: (6 * $blockDayWidth) + 12.5px,
+);

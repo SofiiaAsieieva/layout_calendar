@@ -1,0 +1,27 @@
+@import "../variable";
+
+@for $i from 1 through 31 {
+  .calendar > div:nth-child(#{$i}) {
+    &::after {
+      content: "#{$i}";
+
+      display: flex;
+      justify-content: center;
+      line-height: $blockDayHeight;
+    }
+  }
+}
+
+@each $day, $gap in $week {
+  .calendar-#{$day} :first-child {
+    margin-left: #{$gap};
+  }
+}
+
+@for $i from 28 through 31 {
+  .calendar-#{$i} {
+    div:not(:nth-child(-n + #{$i})) {
+      display: none;
+    }
+  }
+}
