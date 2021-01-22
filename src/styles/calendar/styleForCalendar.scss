@@ -5,9 +5,12 @@
   flex-wrap: wrap;
 
   margin: 0 auto;
-  width: 760px;
+  width: 706px;
 
   div {
+    display: flex;
+    justify-content: center;
+    line-height: $blockDayHeight;
     width: $blockDayWidth;
     height: $blockDayHeight;
     margin-left: 1px;

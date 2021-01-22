@@ -4,10 +4,6 @@
   .calendar > div:nth-child(#{$i}) {
     &::after {
       content: "#{$i}";
-
-      display: flex;
-      justify-content: center;
-      line-height: $blockDayHeight;
     }
   }
 }
